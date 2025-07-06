@@ -20,7 +20,7 @@ try:
         # Close cursor
         cursor.close()
 
-except Error as e:
+except mysql.connector.Error as e:
     print(f"Error: Failed to connect to MySQL server. {e}")
 
 finally:
